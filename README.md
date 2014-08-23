@@ -19,8 +19,8 @@ Examples for Lecture 1 of [ofCourse](http://www.ofcourse.io/): basic graphics, a
 
 ## Example 2: Mouse
  * Different ways of using mouse coordinates
-    1. mouseX and mouseY variables
-    2. passing coords from mouse event to global variables
+    *. mouseX and mouseY variables
+    *. passing coords from mouse event to global variables
         * mouseDragged()
         * mouseReleased()
  
