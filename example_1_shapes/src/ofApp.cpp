@@ -8,10 +8,11 @@
     * ofBeginShape(), ofEndShape(true), ofVertex()
  
  * Playing with different styles and colors
-    * ofSetColor()
+    * ofBackground(), ofBackgroundHex()
     * ofFill(), ofNoFill()
-    * ofSetLineWidth()
+    * ofSetColor(), ofSetHexColor()
     * ofColor::presets
+    * ofSetLineWidth()
  -------------------------------------------------------------*/
 
 //--------------------------------------------------------------
@@ -26,10 +27,15 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    // Solid color in RGB
+    ofBackground(0, 120, 80);
+
+//    // Solid color in Hexadecimal
+//    ofBackgroundHex(0x00ff00);
 
     // CIRCLE
     // Setting a preset color
-//    ofFill();
+    ofFill();
     ofSetColor(ofColor::salmon);
     ofCircle(400, 400, 200);
 
@@ -42,16 +48,16 @@ void ofApp::draw(){
     ofRect(500, 450, 300, 100);
 
     // Drawing a polygon with no fill
-//    ofSetColor(0, 230, 180);
-//    ofSetLineWidth(10);
-//    ofNoFill();
-//    ofBeginShape();
-//        ofVertex(500, 300);
-//        ofVertex(250, 400);
-//        ofVertex(500, 500);
-//        ofVertex(250, 600);
-//        ofVertex(500, 700);
-//    ofEndShape(true);
+    ofSetColor(0, 230, 180);
+    ofSetLineWidth(10);
+    ofNoFill();
+    ofBeginShape();
+        ofVertex(500, 300);
+        ofVertex(250, 400);
+        ofVertex(500, 500);
+        ofVertex(250, 600);
+        ofVertex(500, 700);
+    ofEndShape(true);
 }
 
 //--------------------------------------------------------------

@@ -7,17 +7,25 @@
  * Using global variables to make simple animations
  * Adding conditionals
  * Introducing app properties:
+    * ofSetWindowTitle(), ofSetWindowShape()
+    * ofEnableAntiAliasing(), ofSetCircleResolution()
     * ofGetWidth(), ofGetHeight()
 --------------------------------------------------------------*/
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    // WIndow size
+    // Window Title
+    ofSetWindowTitle("[ofCourse] Basics: Animation");
+
+    // Window size
     ofSetWindowShape(1333, 768);
     
 //    //Both these options work for fullscreen
 //    ofToggleFullscreen();
 //    ofSetFullscreen(true);
+
+    ofEnableAntiAliasing();
+    ofSetCircleResolution(3);
     
     circleX = 0;
     circleY = 0;
@@ -29,26 +37,26 @@ void ofApp::update(){
     circleX += 2;
     circleY += 1;
 
-//    // Uncomment this part to make the circle come back!
-//    if(circleX > ofGetWidth()){
-//        circleX = 0;
-//    }
-//    if(circleY > ofGetHeight()){
-//        circleY = 0;
-//    }
+    // Uncomment this part to make the circle come back!
+    if(circleX > ofGetWidth()){
+        circleX = 0;
+    }
+    if(circleY > ofGetHeight()){
+        circleY = 0;
+    }
     
-//    //Uncomment this part to make the rect follow the mouse
-//    if(rectX < mouseX){
-//        rectX += 2;
-//    }else if (rectX > mouseX){
-//        rectX -= 2;
-//    }
-//    
-//    if(rectY < mouseY){
-//        rectY += 2;
-//    }else if (rectY > mouseY){
-//        rectY -= 2;
-//    }
+    //Uncomment this part to make the rect follow the mouse
+    if(rectX < mouseX){
+        rectX += 2;
+    }else if (rectX > mouseX){
+        rectX -= 2;
+    }
+    
+    if(rectY < mouseY){
+        rectY += 2;
+    }else if (rectY > mouseY){
+        rectY -= 2;
+    }
 }
 
 //--------------------------------------------------------------

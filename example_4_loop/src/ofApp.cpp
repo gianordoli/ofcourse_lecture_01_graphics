@@ -7,7 +7,11 @@
  * Using loops and mouse coordinates to draw an interactive pattern
     a) Simple loop
     b) Nested loop
- * Introducing ofColor and HSB mode
+ 
+ * More color:
+    * ofColor
+    * setHsb()
+    * ofBackgroundGradient()
 --------------------------------------------------------------*/
 
 //--------------------------------------------------------------
@@ -25,25 +29,32 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackground(50, 0, 100);
-    
-    // 1. Simple loop
-    for(int x = 0; x < mouseX; x += spacing){
-        ofColor rectColor;
-        rectColor.setHsb(x*255/ofGetWidth(), 255, 255);
-        ofSetColor(rectColor);
-        ofRect(x, 0, rectSize, rectSize);
-    }
 
-//    // 2. Nested loop!
+    // Gradient Background
+    ofColor color1, color2;
+    color1.set(0, 240, 120);
+    color2.set(0, 120, 240);
+    ofBackgroundGradient(color1, color2, OF_GRADIENT_LINEAR);
+    //    // Also try: OF_GRADIENT_BAR and OF_GRADIENT_CIRCULAR
+    
+    
+//    // 1. Simple loop
 //    for(int x = 0; x < mouseX; x += spacing){
-//        for(int y = 0; y < mouseY; y += spacing){
-//            ofColor rectColor;
-//            rectColor.setHsb(x*255/ofGetWidth(), y*255/ofGetHeight(), 255);
-//            ofSetColor(rectColor);
-//            ofRect(x, y, rectSize, rectSize);
-//        }
+//        ofColor rectColor;
+//        rectColor.setHsb(x*255/ofGetWidth(), 255, 255);
+//        ofSetColor(rectColor);
+//        ofRect(x, 0, rectSize, rectSize);
 //    }
+
+    // 2. Nested loop!
+    for(int x = 0; x < mouseX; x += spacing){
+        for(int y = 0; y < mouseY; y += spacing){
+            ofColor rectColor;
+            rectColor.setHsb(x*255/ofGetWidth(), y*255/ofGetHeight(), 255);
+            ofSetColor(rectColor);
+            ofRect(x, y, rectSize, rectSize);
+        }
+    }
 }
 
 //--------------------------------------------------------------
