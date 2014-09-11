@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4D47F3C4-0B34-48B7-A49B-C79D5713DDA3</string>
+	<string>E6154742-5A09-40A4-A4B7-CDC951ABBE95</string>
 	<key>IDESourceControlProjectName</key>
 	<string>example_1_shapes</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3C0FDC8B-4FCA-4134-A9B8-75F2C8C231DE</key>
-		<string>https://github.com/gianordoli/Lecture-1-Graphics.git</string>
+		<key>8F7BBB86-B495-4D42-B998-752F7F991770</key>
+		<string>https://github.com/gianordoli/ofcourse_lecture_01_graphics.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>example_1_shapes/example_1_shapes.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3C0FDC8B-4FCA-4134-A9B8-75F2C8C231DE</key>
+		<key>8F7BBB86-B495-4D42-B998-752F7F991770</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/gianordoli/Lecture-1-Graphics.git</string>
+	<string>https://github.com/gianordoli/ofcourse_lecture_01_graphics.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3C0FDC8B-4FCA-4134-A9B8-75F2C8C231DE</string>
+	<string>8F7BBB86-B495-4D42-B998-752F7F991770</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3C0FDC8B-4FCA-4134-A9B8-75F2C8C231DE</string>
+			<string>8F7BBB86-B495-4D42-B998-752F7F991770</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Lecture-1-Graphics</string>
+			<string>lecture_01_graphics</string>
 		</dict>
 	</array>
 </dict>
